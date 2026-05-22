@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact The Conscious Family Centre — visit us at BMT Garden, Wuse 2, Abuja. Reach out about programs, events, or joining our community.">
+  <title>Contact | The Conscious Family Centre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=80&q=80" alt="CFC Logo" class="logo-img">
+      Conscious Family Centre
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Join Us</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Get in Touch</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> &gt; <span>Contact</span></p>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--white);">
+    <div class="container">
+      <div class="contact-grid reveal">
+
+        <div>
+          <div id="contactFormContainer">
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/FORM_ID" method="POST">
+              <input type="text" name="name" placeholder="Full Name *" required>
+              <input type="email" name="email" placeholder="Email Address *" required>
+              <input type="tel" name="phone" placeholder="Phone Number">
+              <select name="interest" style="width:100%; padding:1rem; margin-bottom:1.2rem; border:1px solid var(--border); border-radius:0.75rem; font-family:var(--font-body); font-size:1rem; color:var(--text-mid);">
+                <option value="" disabled selected>I'm interested in...</option>
+                <option value="parenting-workshop">Conscious Parenting Workshop</option>
+                <option value="storytelling">Storytelling & Music Sessions</option>
+                <option value="crafts">Creative Crafts Corner</option>
+                <option value="movement">Movement & Play</option>
+                <option value="events">Family Events</option>
+                <option value="general">General Enquiry</option>
+              </select>
+              <textarea name="message" placeholder="Tell us about your family and how we can support you..."></textarea>
+              <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+            </form>
+          </div>
+
+          <div id="confirmationMsg" style="display:none; background:var(--green-bg); padding:2.5rem; border-radius:1rem; text-align:center; border:2px solid var(--green-soft);">
+            <div style="font-size:3rem; color:var(--green-soft); margin-bottom:1rem;">✓</div>
+            <h3 style="color:var(--green-deep); margin-bottom:0.8rem;">Message Received!</h3>
+            <p style="color:var(--text-mid);">Thank you for reaching out to The Conscious Family Centre. We'll get back to you within 24–48 hours. We look forward to connecting with your family!</p>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <h3>Visit Our Centre</h3>
+          <p><span class="contact-icon">📍</span> <strong>Address</strong><br>BMT Garden, 155 Adetokunbo Ademola Crescent, Wuse 2, Abuja, Nigeria</p>
+          <p><span class="contact-icon">📞</span> <strong>Phone</strong><br>+234 818 744 8635</p>
+          <p><span class="contact-icon">✉️</span> <strong>Email</strong><br>hello@consciousfamilycentre.org</p>
+          <p><span class="contact-icon">🕐</span> <strong>Hours</strong><br>Monday – Saturday: 9:00 AM – 5:00 PM<br>Sunday: Closed</p>
+          <p style="margin-top:1.5rem; color:var(--green-soft); font-weight:500;">🌿 We're located inside the serene BMT Garden — follow the signs to the children's centre once you enter the garden.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>The Conscious Family Centre</h4>
+        <p>Nurturing families through conscious parenting, creative learning, and community connection in the heart of Abuja.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="about.html">About Us</a>
+        <a href="programs.html">Our Programs</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <p>BMT Garden, Wuse 2</p>
+        <p>Abuja, Nigeria</p>
+        <p>📞 +234 818 744 8635</p>
+        <p>✉️ hello@consciousfamilycentre.org</p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Our Journey</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/consciousfamilycentre" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 <strong>The Conscious Family Centre</strong>. All rights reserved. Built with ❤️ for families.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
