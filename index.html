@@ -233,6 +233,31 @@ footer{background:var(--gd);padding:40px 40px 30px;text-align:center}
 @media(max-width:420px){
   .acts-grid{grid-template-columns:1fr 1fr}
 }
+  /* ─── GALLERY TEASER ─── */
+#gallery-teaser{padding:70px 40px 60px;background:var(--sf)}
+.gt-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.gt-text .sec-tag{text-align:left;display:block}
+.gt-text .sec-title{text-align:left;font-size:clamp(1.6rem,3.4vw,2.4rem)}
+.gt-text .sec-div{margin:14px 0 0}
+.gt-text p{color:var(--bd);line-height:1.82;font-size:.95rem;margin-top:16px}
+.gt-cta{display:inline-flex;align-items:center;gap:10px;margin-top:26px;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;padding:14px 34px;border-radius:50px;text-decoration:none;font-weight:700;font-size:.9rem;transition:all .3s;box-shadow:0 8px 28px rgba(31,107,58,.35)}
+.gt-cta:hover{transform:translateY(-4px);box-shadow:0 14px 38px rgba(31,107,58,.55)}
+.gt-cta svg{transition:transform .3s}
+.gt-cta:hover svg{transform:translateX(5px)}
+.gt-mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:12px}
+.gt-tile{border-radius:16px;overflow:hidden;position:relative;background:linear-gradient(135deg,#eef8f0,#d5edd9);display:flex;align-items:center;justify-content:center}
+.gt-tile:first-child{grid-row:1/3;min-height:260px}
+.gt-tile:not(:first-child){min-height:120px}
+.gt-tile-ico{font-size:2.8rem;opacity:.55;transition:all .4s}
+.gt-tile:hover .gt-tile-ico{opacity:.85;transform:scale(1.12)}
+.gt-tile .gt-tile-lbl{position:absolute;bottom:10px;left:12px;background:rgba(11,36,21,.62);color:rgba(255,255,255,.88);font-size:.68rem;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.gt-tile-1{background:linear-gradient(135deg,#1a4a28,#2d7a45)}
+.gt-tile-2{background:linear-gradient(135deg,#6b3a1f,#c47a2e)}
+.gt-tile-3{background:linear-gradient(135deg,#3a1f5a,#8e44ad)}
+.gt-view-all{display:flex;align-items:center;justify-content:center;gap:8px;color:var(--g1);font-size:.78rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-top:10px;text-decoration:none;transition:gap .3s}
+.gt-view-all:hover{gap:14px;color:var(--g2)}
+@media(max-width:860px){.gt-inner{grid-template-columns:1fr;gap:32px}.gt-mosaic{grid-template-columns:repeat(3,1fr)}.gt-tile:first-child{grid-row:auto;min-height:130px}.gt-tile:not(:first-child){min-height:130px}}
+@media(max-width:580px){#gallery-teaser{padding:52px 20px 44px}.gt-mosaic{gap:9px}}
 </style>
 </head>
 <body>
@@ -394,7 +419,46 @@ footer{background:var(--gd);padding:40px 40px 30px;text-align:center}
   </div>
 </section>
 
-<!-- ═══════════ CONTACT ═══════════ -->
+<!-- ═══════════ GALLERY TEASER ═══════════ -->
+<section id="gallery-teaser">
+  <div class="gt-inner">
+
+    <div class="gt-text rv">
+      <div class="sec-tag">📸 Our Gallery</div>
+      <h2 class="sec-title">Life at Conscious Family Centre</h2>
+      <div class="sec-div"></div>
+      <p>Every day at CFC is filled with laughter, discovery, and beautiful moments worth remembering. From muddy hands in the forest to colourful art projects, joyful excursions, and warm family connections — our gallery captures the heart of everything we do.</p>
+      <p>Step inside and see the magic for yourself.</p>
+      <a href="gallery.html" class="gt-cta">
+        View Full Gallery
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="rv">
+      <div class="gt-mosaic">
+        <div class="gt-tile gt-tile-1">
+          <span class="gt-tile-ico">🌳</span>
+          <span class="gt-tile-lbl">Forest School</span>
+        </div>
+        <div class="gt-tile gt-tile-2">
+          <span class="gt-tile-ico">🎨</span>
+          <span class="gt-tile-lbl">Arts &amp; Crafts</span>
+        </div>
+        <div class="gt-tile gt-tile-3">
+          <span class="gt-tile-ico">🚌</span>
+          <span class="gt-tile-lbl">Waka Wednesday</span>
+        </div>
+      </div>
+      <a href="gallery.html" class="gt-view-all">
+        See all photos &nbsp;→
+      </a>
+    </div>
+
+  </div>
+</section>
+  
+  <!-- ═══════════ CONTACT ═══════════ -->
 <section id="contact">
   <div class="sec-hd rv">
     <div class="sec-tag">Get In Touch</div>
